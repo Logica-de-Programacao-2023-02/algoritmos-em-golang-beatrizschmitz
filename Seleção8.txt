@@ -1,0 +1,33 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var n int
+	fmt.Print("dia: ")
+	fmt.Scan(&n)
+
+	if n == 1 {
+
+		fmt.Print("dom ")
+	} else if n == 2 {
+
+		fmt.Print("seg")
+	} else if n == 3 {
+
+		fmt.Print("ter")
+	} else if n == 4 {
+
+		fmt.Print("qua")
+	} else if n == 5 {
+
+		fmt.Print("qui")
+	} else if n == 6 {
+
+		fmt.Print("sex")
+	} else if n == 7 {
+
+		fmt.Print("sab")
+	}
+}

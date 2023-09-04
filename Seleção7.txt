@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	fmt.Print("salario : ")
+	fmt.Scan(&n1)
+
+	if n1 < 1000 {
+
+		salario := (n1 * (0.10)) + n1
+		fmt.Println("novo salario: ", salario)
+
+	} else if n1 >= 1000 {
+		salario := (n1 * (0.05)) + n1
+		fmt.Println("novo salario: ", salario)
+	}
+
+}

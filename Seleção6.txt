@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1, n2 int
+	fmt.Print("Qual é primeiro numero ? ")
+	fmt.Scan(&n1)
+	fmt.Print("Qual é segundo numero ? ")
+	fmt.Scan(&n2)
+
+	if n1 >= 0 && n2 >= 0 {
+
+		multiplicaçao := n1 * n2
+		fmt.Println("A multiplicaçao é ", multiplicaçao)
+
+	} else if n1 < 0 || n2 < 0 {
+		soma := n1 + n2
+		fmt.Println("a soma é ", soma)
+	}
+
+}

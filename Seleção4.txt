@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	var peso, altura float64
+	fmt.Print("peso:")
+	fmt.Scan(&peso)
+	fmt.Print("altura: ")
+	fmt.Scan(&altura)
+
+	IMC := peso / (altura * altura)
+	fmt.Println("IMC", IMC)
+	if IMC < 18.5 {
+		fmt.Print("Está abaixo do peso ideal ")
+	} else if IMC >= 18.5 && IMC < 25 {
+		fmt.Print("Peso ideal ")
+	} else if IMC >= 25 && IMC <= 29 {
+		fmt.Print("Peso ideal ")
+	}
+}
